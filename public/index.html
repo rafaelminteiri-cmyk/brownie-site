@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brownie Brasileiro — O brownie que vende sozinho</title>
+  <meta name="description" content="Seja um ponto de revenda Brownie Brasileiro. Consignação sem risco, giro rápido e produto artesanal de qualidade. Cachoeiro de Itapemirim - ES.">
+  <meta property="og:title" content="Brownie Brasileiro — Seja um parceiro">
+  <meta property="og:description" content="Produto consignado, você paga só pelo que vender. Entre em contato e seja um revendedor.">
+  <meta property="og:url" content="https://browniebrasileiro.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🍫</span>
+        <div>
+          <div class="logo-name">Brownie Brasileiro</div>
+          <div class="logo-sub">O brownie que vende sozinho</div>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#sobre">Quem somos</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#numeros">Resultados</a>
+        <a href="#cadastro" class="btn-nav">Seja parceiro</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#sobre" onclick="closeMenu()">Quem somos</a>
+      <a href="#vantagens" onclick="closeMenu()">Vantagens</a>
+      <a href="#numeros" onclick="closeMenu()">Resultados</a>
+      <a href="#cadastro" class="btn-nav-mobile" onclick="closeMenu()">Seja parceiro</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🤝 Consignação sem risco</div>
+      <h1 class="hero-title">O brownie artesanal<br><span class="gold">que vende sozinho</span></h1>
+      <p class="hero-sub">Aumente o faturamento do seu comércio sem investimento inicial. Você só paga pelo que vender — o risco é zero, o lucro é seu.</p>
+      <div class="hero-actions">
+        <a href="#cadastro" class="btn-primary">Quero ser parceiro</a>
+        <a href="#vantagens" class="btn-ghost">Ver vantagens</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item"><span class="proof-num">+20</span><span class="proof-label">Pontos ativos</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><span class="proof-num">1.500+</span><span class="proof-label">Brownies/mês</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><span class="proof-num">100%</span><span class="proof-label">Satisfação</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-frame">
+        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=600,fit=crop/RbIkd4yNI228ZTMC/brownie-removebg-preview-Dtai24jHASwdEx1J.png"
+             alt="Brownie Brasileiro artesanal"
+             onerror="this.style.display='none'">
+        <div class="hero-img-placeholder">🍫</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <div class="eyebrow">Quem somos</div>
+          <h2>Brownies artesanais.<br>Parceria de verdade.</h2>
+          <p>O Brownie Brasileiro nasceu com um objetivo claro: produzir brownies artesanais de qualidade e criar oportunidades reais para estabelecimentos aumentarem suas vendas sem complicação.</p>
+          <p>Acreditamos que um bom produto aliado a uma parceria séria gera resultados para todos. Buscamos crescer ao lado de mercados, cafeterias, padarias, conveniências e outros estabelecimentos que desejam oferecer um produto diferenciado.</p>
+          <a href="#cadastro" class="btn-primary" style="margin-top:1.5rem;display:inline-flex">Quero fazer parte</a>
+        </div>
+        <div class="sobre-cards">
+          <div class="sobre-card">
+            <div class="sobre-card-icon">🎨</div>
+            <div class="sobre-card-title">Artesanal</div>
+            <div class="sobre-card-text">Produção cuidadosa com ingredientes selecionados para garantir sabor e qualidade em cada unidade.</div>
+          </div>
+          <div class="sobre-card">
+            <div class="sobre-card-icon">🔄</div>
+            <div class="sobre-card-title">Reposição semanal</div>
+            <div class="sobre-card-text">Sua vitrine sempre cheia. Passamos toda semana para repor e coletar o que não vendeu.</div>
+          </div>
+          <div class="sobre-card">
+            <div class="sobre-card-icon">📦</div>
+            <div class="sobre-card-title">Pronto para vender</div>
+            <div class="sobre-card-text">Embalagens profissionais prontas para o ponto de venda. Sem trabalho da sua parte.</div>
+          </div>
+          <div class="sobre-card">
+            <div class="sobre-card-icon">🤝</div>
+            <div class="sobre-card-title">Parceria séria</div>
+            <div class="sobre-card-text">Sem burocracia, sem contrato complicado. Uma parceria baseada em resultado e confiança.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section class="section vantagens" id="vantagens">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow eyebrow-gold">Por que ser parceiro</div>
+        <h2>Vantagens para o seu comércio</h2>
+        <p>Um produto que agrega sem trabalho. Você só precisa de um espaço na vitrine.</p>
+      </div>
+      <div class="vantagens-grid">
+        <div class="vantagem-card featured">
+          <div class="vantagem-icon">💰</div>
+          <div class="vantagem-tag">Principal vantagem</div>
+          <h3>Zero risco financeiro</h3>
+          <p>Consignação total. Você paga apenas pelas unidades que foram vendidas. O que não vender, a gente busca de volta. Simples assim.</p>
+        </div>
+        <div class="vantagem-card">
+          <div class="vantagem-icon">🚀</div>
+          <h3>Giro rápido</h3>
+          <p>Brownie é impulso. Alta aceitação do público e ticket médio que o cliente decide na hora. Produto que sai sem precisar de esforço de divulgação.</p>
+        </div>
+        <div class="vantagem-card">
+          <div class="vantagem-icon">💲</div>
+          <h3>Sua margem, você define</h3>
+          <p>O preço de revenda fica 100% na sua mão. Você decide quanto cobrar do seu cliente e fica com a diferença.</p>
+        </div>
+        <div class="vantagem-card">
+          <div class="vantagem-icon">🗓️</div>
+          <h3>Reposição garantida</h3>
+          <p>Passamos semanalmente no seu ponto. Levamos produto novo, coletamos o que sobrou e você não precisa se preocupar com nada.</p>
+        </div>
+        <div class="vantagem-card">
+          <div class="vantagem-icon">🏆</div>
+          <h3>Produto diferenciado</h3>
+          <p>Brownie artesanal com qualidade que o cliente percebe e volta a comprar. Agrega valor à sua vitrine e fideliza clientes.</p>
+        </div>
+        <div class="vantagem-card">
+          <div class="vantagem-icon">📲</div>
+          <h3>Suporte direto</h3>
+          <p>Atendimento por WhatsApp, rápido e sem enrolação. Qualquer dúvida ou ajuste, resolvemos na hora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="section numeros" id="numeros">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow eyebrow-gold">Resultados reais</div>
+        <h2>Crescendo junto com nossos parceiros</h2>
+      </div>
+      <div class="numeros-grid">
+        <div class="numero-card">
+          <div class="numero-val">+20</div>
+          <div class="numero-label">Pontos parceiros ativos</div>
+          <div class="numero-desc">Em Cachoeiro de Itapemirim e região</div>
+        </div>
+        <div class="numero-card numero-featured">
+          <div class="numero-val">1.500+</div>
+          <div class="numero-label">Brownies produzidos por mês</div>
+          <div class="numero-desc">Produção artesanal com qualidade constante</div>
+        </div>
+        <div class="numero-card">
+          <div class="numero-val">100%</div>
+          <div class="numero-label">Satisfação dos parceiros</div>
+          <div class="numero-desc">Todos os parceiros renovam a consignação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section como" id="como">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">É simples assim</div>
+        <h2>Como funciona a parceria</h2>
+      </div>
+      <div class="como-steps">
+        <div class="como-step">
+          <div class="como-num">1</div>
+          <div class="como-content">
+            <h3>Você envia o cadastro</h3>
+            <p>Preenche o formulário abaixo com seus dados. Leva menos de 1 minuto.</p>
+          </div>
+        </div>
+        <div class="como-arrow">→</div>
+        <div class="como-step">
+          <div class="como-num">2</div>
+          <div class="como-content">
+            <h3>A gente entra em contato</h3>
+            <p>Nossa equipe liga ou manda mensagem no WhatsApp para alinhar os detalhes.</p>
+          </div>
+        </div>
+        <div class="como-arrow">→</div>
+        <div class="como-step">
+          <div class="como-num">3</div>
+          <div class="como-content">
+            <h3>Começamos a parceria</h3>
+            <p>Levamos os brownies, você expõe na vitrine e fatura em cima do que vender.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CADASTRO -->
+  <section class="section cadastro" id="cadastro">
+    <div class="container">
+      <div class="cadastro-grid">
+        <div class="cadastro-text">
+          <div class="eyebrow eyebrow-gold">Seja um parceiro</div>
+          <h2>Pronto para aumentar seu faturamento?</h2>
+          <p>Preencha o formulário ao lado. Nossa equipe comercial entrará em contato rapidamente para viabilizar o fornecimento.</p>
+          <ul class="cadastro-list">
+            <li>✓ Sem taxas de adesão</li>
+            <li>✓ Sem contrato complicado</li>
+            <li>✓ Resposta em até 24 horas</li>
+            <li>✓ Atendemos Cachoeiro e região</li>
+          </ul>
+          <div class="cadastro-contact">
+            <a href="https://www.instagram.com/browniebrasileiro/" target="_blank" rel="noopener" class="social-link">
+              <span>📸</span> @browniebrasileiro
+            </a>
+            <div class="social-link"><span>📍</span> Cachoeiro de Itapemirim — ES</div>
+            <a href="mailto:browniebrasieleiro@gmail.com" class="social-link">
+              <span>✉️</span> browniebrasieleiro@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="form-card" id="form-card">
+          <h3>Cadastro de parceiro</h3>
+          <form id="form-parceiro" onsubmit="enviarFormulario(event)">
+            <div class="form-group">
+              <label for="nome">Seu nome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(28) 99999-9999" required>
+            </div>
+            <div class="form-group">
+              <label for="estabelecimento">Nome e tipo do estabelecimento *</label>
+              <input type="text" id="estabelecimento" name="estabelecimento" placeholder="Ex: Padaria Central" required>
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Cachoeiro de Itapemirim">
+            </div>
+            <button type="submit" class="btn-form" id="btn-submit">
+              <span id="btn-text">Quero ser parceiro 🍫</span>
+            </button>
+            <p class="form-disclaimer">Ao enviar, nossa equipe receberá seus dados e entrará em contato em breve.</p>
+          </form>
+          <div class="form-success" id="form-success" style="display:none">
+            <div class="success-icon">✅</div>
+            <h3>Cadastro enviado!</h3>
+            <p>Recebemos seus dados e nossa equipe entrará em contato em breve. Obrigado pelo interesse!</p>
+            <a href="https://www.instagram.com/browniebrasileiro/" target="_blank" rel="noopener" class="btn-primary" style="margin-top:1rem;display:inline-flex">
+              📸 Nos siga no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">🍫 Brownie Brasileiro</div>
+          <div class="footer-tagline">O brownie que vende sozinho.</div>
+          <div class="footer-desc">Parceria comercial sem burocracia e com reposição constante. Cachoeiro de Itapemirim — ES.</div>
+        </div>
+        <div>
+          <div class="footer-heading">Navegação</div>
+          <a href="#sobre" class="footer-link">Quem somos</a>
+          <a href="#vantagens" class="footer-link">Vantagens</a>
+          <a href="#numeros" class="footer-link">Resultados</a>
+          <a href="#cadastro" class="footer-link">Seja parceiro</a>
+        </div>
+        <div>
+          <div class="footer-heading">Contato</div>
+          <div class="footer-link">📍 Cachoeiro de Itapemirim — ES</div>
+          <a href="mailto:browniebrasieleiro@gmail.com" class="footer-link">✉️ browniebrasieleiro@gmail.com</a>
+          <a href="https://www.instagram.com/browniebrasileiro/" target="_blank" rel="noopener" class="footer-link">📸 @browniebrasileiro</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Brownie Brasileiro</span>
+        <span>Feito com 🍫 em Cachoeiro de Itapemirim</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

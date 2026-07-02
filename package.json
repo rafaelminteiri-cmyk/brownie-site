@@ -1,0 +1,8 @@
+{
+  "name": "brownie-brasileiro-site",
+  "version": "1.0.0",
+  "description": "Site institucional Brownie Brasileiro",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
