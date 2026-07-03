@@ -34,6 +34,44 @@ document.querySelectorAll('.sobre-card, .vantagem-card, .numero-card, .como-step
   observer.observe(el);
 });
 
+// ===== CONTADOR ANIMADO =====
+function animarContador(el) {
+  if (el.dataset.animated) return;
+  el.dataset.animated = 'true';
+
+  const bruto = el.textContent.trim();
+  const match = bruto.match(/^([^\d]*)([\d.,]+)([^\d]*)$/);
+  if (!match) return;
+  const [, prefixo, numero, sufixo] = match;
+  const alvo = parseInt(numero.replace(/\D/g, ''), 10);
+  if (isNaN(alvo)) return;
+
+  const duracao = 2200;
+  const inicio = performance.now();
+
+  function passo(agora) {
+    const progresso = Math.min((agora - inicio) / duracao, 1);
+    const suavizado = 1 - Math.pow(1 - progresso, 3);
+    const valorAtual = Math.round(alvo * suavizado);
+    el.textContent = prefixo + valorAtual.toLocaleString('pt-BR') + sufixo;
+    if (progresso < 1) requestAnimationFrame(passo);
+  }
+  requestAnimationFrame(passo);
+}
+
+document.querySelectorAll('.proof-num').forEach(animarContador);
+
+const contadorObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animarContador(entry.target);
+      contadorObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.4 });
+
+document.querySelectorAll('.numero-val').forEach(el => contadorObserver.observe(el));
+
 // ===== FORMULÁRIO =====
 async function enviarFormulario(event) {
   event.preventDefault();
@@ -78,9 +116,9 @@ async function enviarFormulario(event) {
     console.error(err);
     // Mesmo se der erro, mostrar confirmação (evita frustração do usuário)
     // Em produção, você pode ajustar isso
-    alert('Houve um problema ao enviar. Por favor, entre em contato diretamente pelo e-mail browniebrasieleiro@gmail.com ou Instagram @browniebrasileiro.');
+    alert('Houve um problema ao enviar. Por favor, entre em contato diretamente pelo e-mail browniebrasileiro@gmail.com ou Instagram @browniebrasileiro.');
     btn.disabled = false;
-    btnText.textContent = 'Quero ser parceiro 🍫';
+    btnText.textContent = 'Quero ser parceiro';
   }
 }
 
